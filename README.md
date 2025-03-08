@@ -113,16 +113,6 @@ The system uses JSON configuration files with the following structure:
 }
 ```
 
-## 🔗 AI Development Resources
-
-- [Complete Documentation](https://github.com/yourusername/claude-generator/wiki)
-- [API Reference & Integration](https://github.com/yourusername/claude-generator/wiki/API)
-- [Code Generation Examples](https://github.com/yourusername/claude-generator/examples)
-- [Advanced Prompt Engineering Guide](https://github.com/yourusername/claude-generator/wiki/prompts)
-- [Claude AI For Developers](https://github.com/yourusername/claude-generator/wiki/claude-integration)
-- [Full-Stack Application Templates](https://github.com/yourusername/claude-generator/templates)
-- [AI Code Generation Best Practices](https://github.com/yourusername/claude-generator/wiki/best-practices)
-
 ## 📄 License
 
 MIT License
