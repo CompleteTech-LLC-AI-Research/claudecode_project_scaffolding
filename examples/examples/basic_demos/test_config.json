@@ -1,0 +1,30 @@
+{
+  "project_name": "test_project",
+  "description": "A test project for CLI usage",
+  "variables": {
+    "concept": "A simple test application",
+    "language": "python"
+  },
+  "tiers": {
+    "initial": {
+      "enabled": true,
+      "prompt_template": {
+        "content": "Create a plan for $concept using $language",
+        "variables": {}
+      },
+      "output_format": "text",
+      "use_system_info": true,
+      "optimize": false
+    },
+    "file_generation": {
+      "enabled": false,
+      "prompt_template": {
+        "content": "Generate file $file_name based on the plan: $input",
+        "variables": {}
+      },
+      "output_format": "text",
+      "use_system_info": false,
+      "optimize": false
+    }
+  }
+}

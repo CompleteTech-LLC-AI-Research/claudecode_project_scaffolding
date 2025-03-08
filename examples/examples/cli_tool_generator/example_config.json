@@ -1,0 +1,58 @@
+{
+  "project_name": "csv_utility",
+  "description": "A command-line utility for processing CSV files",
+  "variables": {
+    "concept": "A CSV processing utility that can filter, sort, and transform CSV data",
+    "language": "python",
+    "features": [
+      "Loading CSV files with header detection",
+      "Filtering rows based on column values",
+      "Sorting by multiple columns",
+      "Transforming values with custom functions",
+      "Saving to CSV or JSON formats"
+    ],
+    "structure": {
+      "csv_utility": {
+        "core": ["csv_loader.py", "csv_processor.py", "csv_writer.py"],
+        "operations": ["filter.py", "sort.py", "transform.py"],
+        "utils": ["error_handling.py", "config.py"],
+        "cli": ["commands.py", "main.py"],
+        "tests": ["test_loader.py", "test_processor.py", "test_writer.py", 
+                 "test_operations.py", "test_cli.py"],
+        "docs": ["README.md", "USAGE.md", "CONTRIBUTING.md"]
+      }
+    }
+  },
+  "tiers": {
+    "initial": {
+      "enabled": true,
+      "prompt_template": {
+        "content": "Create a detailed development plan for $concept using $language.\n\nThe application should support these features:\n$features\n\nConsider the system information: $system\n\nCreate a plan that includes architecture, module breakdown, and implementation details.",
+        "variables": {}
+      },
+      "use_system_info": true,
+      "output_format": "text",
+      "optimize": true
+    },
+    "file_generation": {
+      "enabled": true,
+      "prompt_template": {
+        "content": "Generate the file $file_path for a project with this concept: $concept\n\nThe file should be part of a $language project with these features:\n$features\n\nBased on this structure:\n$structure\n\nGenerate complete, production-ready code for this file.",
+        "variables": {}
+      },
+      "output_format": "text",
+      "use_system_info": false,
+      "optimize": true
+    },
+    "readme_generation": {
+      "enabled": true,
+      "prompt_template": {
+        "content": "Create a comprehensive README.md for a project called $project_name with this description: $description\n\nThe project is written in $language and includes these features:\n$features\n\nInclude sections for installation, usage examples, features, contribution guidelines, and license.",
+        "variables": {}
+      },
+      "output_format": "text",
+      "use_system_info": false,
+      "optimize": true
+    }
+  }
+}
